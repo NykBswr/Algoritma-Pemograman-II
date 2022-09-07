@@ -14,3 +14,28 @@ def kalkulator():
             return "Can't divide by 0!"
         else:
             return hasil
+
+while True:
+    try:
+        x = int(input("Masukan bilangan pertama: "))
+    except ValueError:
+        print("Error")
+        continue
+    break
+while True:
+    try:
+        y = int(input("Masukan bilangan kedua: "))
+    except ValueError:
+        print("Error")
+        continue
+    break
+
+while True:
+    operasi = input("Pilih operasi matematika yang anda inginkan (+, -, /, *): ")
+
+    if operasi != "+" and operasi != "-" and operasi != "/" and operasi != "*":
+        print("Error")
+        continue
+    break
+
+print(f"Hasil dari {x} {operasi} {y} adalah", kalkulator())
