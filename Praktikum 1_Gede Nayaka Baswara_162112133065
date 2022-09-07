@@ -1,0 +1,16 @@
+def kalkulator():
+    while True:
+        try:
+            if operasi == "+":
+                hasil = x + y
+            elif operasi == "-":
+                hasil = x - y
+            elif operasi == "/":
+                hasil = x / y
+            elif operasi == "*":
+                hasil = x * y
+         
+        except ZeroDivisionError:
+            return "Can't divide by 0!"
+        else:
+            return hasil
